@@ -1,0 +1,197 @@
+{
+  "benchmark": "M4",
+  "model": "meta-llama/Llama-3.2-1B-Instruct",
+  "endpoint": "http://localhost:8000/v1/completions",
+  "prompt": "Explain what PagedAttention is in vLLM. Focus on KV-cache management and memory efficiency.",
+  "results": [
+    {
+      "concurrency": 1,
+      "requests": 8,
+      "max_tokens": 64,
+      "wall_time_seconds": 7.419,
+      "total_completion_tokens": 512,
+      "aggregate_throughput_tok_s": 69.01,
+      "requests_per_second": 1.08,
+      "mean_latency_seconds": 0.9271,
+      "p50_latency_seconds": 0.9253,
+      "p95_latency_seconds": 0.9353,
+      "max_latency_seconds": 0.9353,
+      "requests_detail": [
+        {
+          "request_id": 0,
+          "latency_seconds": 0.9296772589996181,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 1,
+          "latency_seconds": 0.9293305749997671,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 2,
+          "latency_seconds": 0.924303050999697,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 3,
+          "latency_seconds": 0.9352524779997111,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 4,
+          "latency_seconds": 0.9229703239998344,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 5,
+          "latency_seconds": 0.9248019400001795,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 6,
+          "latency_seconds": 0.9249800099996719,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 7,
+          "latency_seconds": 0.9255584370002907,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        }
+      ]
+    },
+    {
+      "concurrency": 2,
+      "requests": 8,
+      "max_tokens": 64,
+      "wall_time_seconds": 3.9405,
+      "total_completion_tokens": 512,
+      "aggregate_throughput_tok_s": 129.93,
+      "requests_per_second": 2.03,
+      "mean_latency_seconds": 0.9828,
+      "p50_latency_seconds": 0.9827,
+      "p95_latency_seconds": 0.9885,
+      "max_latency_seconds": 0.9885,
+      "requests_detail": [
+        {
+          "request_id": 0,
+          "latency_seconds": 0.9884910179998769,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 1,
+          "latency_seconds": 0.9728130000003148,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 2,
+          "latency_seconds": 0.9868047030004163,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 3,
+          "latency_seconds": 0.9860909540002467,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 4,
+          "latency_seconds": 0.981741277000765,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 5,
+          "latency_seconds": 0.9809999470007824,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 6,
+          "latency_seconds": 0.9820708829993237,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 7,
+          "latency_seconds": 0.9832475330003945,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        }
+      ]
+    },
+    {
+      "concurrency": 4,
+      "requests": 8,
+      "max_tokens": 64,
+      "wall_time_seconds": 2.009,
+      "total_completion_tokens": 512,
+      "aggregate_throughput_tok_s": 254.85,
+      "requests_per_second": 3.98,
+      "mean_latency_seconds": 0.9957,
+      "p50_latency_seconds": 0.9963,
+      "p95_latency_seconds": 1.0095,
+      "max_latency_seconds": 1.0095,
+      "requests_detail": [
+        {
+          "request_id": 0,
+          "latency_seconds": 0.9800486129997807,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 1,
+          "latency_seconds": 1.0095232200001192,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 2,
+          "latency_seconds": 0.9936529730002803,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 3,
+          "latency_seconds": 0.9941131200002928,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 4,
+          "latency_seconds": 0.9966416979996211,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 5,
+          "latency_seconds": 0.9991317439998966,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 6,
+          "latency_seconds": 0.9962376619996576,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        },
+        {
+          "request_id": 7,
+          "latency_seconds": 0.9964049250002063,
+          "completion_tokens": 64,
+          "total_tokens": 86
+        }
+      ]
+    }
+  ]
+}
