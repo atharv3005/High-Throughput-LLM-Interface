@@ -1,0 +1,20 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+
+# Model weights / caches
+models/
+*.safetensors
+*.bin
+.cache/
+huggingface_cache/
+
+# Benchmark artifacts
+*.log
+
+# OS
+.DS_Store

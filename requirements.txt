@@ -1,0 +1,6 @@
+# Core inference engine — pinned exact
+vllm==0.27.1
+
+# Secrets/config management
+python-dotenv>=1.0.0
+
